@@ -14,13 +14,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <!-- Custom styles for this template -->
     <style type="text/css">
+        *{
+            font-family: 'Comfortaa', cursive;
+        }
         body {
             padding-top: 5rem;
         }
-
         li {
             cursor: pointer;
             list-style: url(data:image/png;
@@ -29,12 +32,10 @@
             font-size: 20px;
             padding: 1px;
         }
-
         a:hover {
             text-decoration: none;
             transition-duration: 1s;
         }
-
         #light {
             height: 30px;
             width: 30px;
@@ -42,13 +43,11 @@
             border-radius: 50%;
             display: inline-block;
         }
-
         #light:hover {
             background: #000;
             border: 2px solid #fff;
             transition-duration: 0.7s;
         }
-
         #dark {
             height: 30px;
             width: 30px;
@@ -56,7 +55,6 @@
             border-radius: 50%;
             display: inline-block;
         }
-
         #dark:hover {
             border: 2px solid #fff;
             transition-duration: 0.7s;
@@ -75,7 +73,7 @@
             background-size: cover;
         }
         .darkbg{
-            background-image: url(https://wallpaperstudio10.com/static/wpdb/wallpapers/1920x1080/176013.jpg);
+            background-image: url(https://images.unsplash.com/photo-1538393458636-02b5a75c6feb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2ba4d39ff5f76c35e2efe49fa1b07225&auto=format&fit=crop&w=1414&q=80);
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -94,50 +92,29 @@
 </head>
 
 
-<body>
+<body class="darkbg">
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">EMC Share Folder</a>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <strong><a class="navbar-brand" href="#">EMC Share Folder</a></strong>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="myInput">
-                <button class="btn btn-primary my-2 my-sm-0" type="submit" id="search">Search</button>
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="myInput" style="border:1px solid black;">
             </form>
-        </div>
-        <div style="float: right">
-            <button  class="btn btn-danger" id="dark" title="Dark Background"></button>
         </div>
     </nav>
 
     <main role="main" class="container home">
         <ul id="myList">
-            <li><a href="assets/divisibility.pdf">Divisibility(18/9/2018)</a></li>
+            <li><a href="assets/divisibility.pdf" target="_blank">Divisibility(18/9/2018)</a></li>
             <li><a href="assets/unitdigit.pdf" target="_blank">Unit Digits(24/9/2018)</a></li>
-            <h3>Practice Problems</h3>
+            <u><h3 style="padding-bottom: 10px;">Practice Problems : </h3></u>
             <li><a href="assets/tcs.pdf" target="_blank">TCS problems(10/3/2018)</a></li> 
         </ul>
-    </main><!-- /.container -->
-<script>
-    $(document).ready(function(){
-    $("#light").click(function(){
-        $("nav").removeClass("navbar-dark bg-dark darkbg");
-        $("nav").addClass("bb");
-        $("navbar-brand").css("color","#000");
-        $("body").addClass("bgimage");
-        
-    });
-        $("#dark").click(function(){
-        $("nav").removeClass("navbar-dark bg-dark");
-            $("nav").removeClass("bb")
-            $("nav").addClass("navbar-dark bg-dark");
-            $("body").addClass("darkbg");
-    });
-});
-    </script>
+    </main>
 </body>
 
 </html>
