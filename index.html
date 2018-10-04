@@ -26,8 +26,7 @@
         }
         li {
             cursor: pointer;
-            list-style: url(data:image/png;
-            base64, iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFHSURBVDhPxZXPSoRQFIettkHME7WZ1egEk16oOw5ELaIXGNqERI8QtG0XvUEP0K5NELWcZVCO5phl/u3kuXOtUa8kRPjBD8Fzz4fXi0epDCFkRZZppxyaBejhd+7kg45hGMu8TUxPHeqKOnxVt3fdcjS65z7uH9tAxoA5H59McC328PYKS4qqu1PLhlqOzpiM5foWzKkFyiZ1sXeuWKDbJWuDrR2Pt4opCRHsWSdklWt++IuQK4o0Ep5eAtxPAC6uAG4e2K2+NvK5okgjoYDegIZcUeTfhXGSQhglwmAtp7HQ80OYvQXCYC2nvS073geYzrswWMtp7wn9IGLvajH5YWAtp7EQT9MP4kLS9JPVojhhV6S9LTelVpjBxpdlv/Clv/P0bGbfsu7w/irzAatXhmtd+qo+29BGhLeLwbEu+gWIUv0FSNIX/NWMMkBkkysAAAAASUVORK5CYII=);
+            list-style:inside;
             margin: 16px 0;
             font-size: 20px;
             padding: 1px;
@@ -67,18 +66,19 @@
             background: #fff;
             padding:20px;
         }
-        .bgimage{
-            background-image: url(back.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .darkbg{
-            background-image: url(https://images.unsplash.com/photo-1538393458636-02b5a75c6feb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2ba4d39ff5f76c35e2efe49fa1b07225&auto=format&fit=crop&w=1414&q=80);
+        body{
+            background-image: url(https://images.unsplash.com/photo-1516865622081-e98d705bb920?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8e453c06501d9fb07a1d9e4d598410be&auto=format&fit=crop&w=1350&q=80);
             background-repeat: no-repeat;
             background-size: cover;
         }
         kbd{
         font-size:16px;
+        }
+        kbd:hover{
+            background-color: white;
+            color: #000;
+            transition-duration: 0.3s;
+            border:2px solid black;
         }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -95,7 +95,7 @@
 </head>
 
 
-<body class="darkbg">
+<body>
 
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
         <strong><a class="navbar-brand" href="#">EMC Share Folder</a></strong>
@@ -112,11 +112,12 @@
 
     <main role="main" class="container home">
         <ul id="myList">
-            <li><a href="assets/divisibility.pdf" target="_blank">Divisibility<kbd>(18/9/2018)</kbd></a></li>
-            <li><a href="assets/unitdigit.pdf" target="_blank">Unit Digits(24/9/2018)</a></li>
+           <u><h3 style="padding-bottom: 10px;">Aptitude : </h3></u>
+            <li><a href="assets/divisibility.pdf" target="_blank">Divisibility  <kbd>(18/9/2018)</kbd></a></li>
+            <li><a href="assets/unitdigit.pdf" target="_blank">Unit Digits  <kbd>(24/9/2018)</kbd></a></li>
             <u><h3 style="padding-bottom: 10px;">Practice Problems : </h3></u>
-            <li><a href="assets/tcs.pdf" target="_blank">TCS problem (kth Largest Factor of N) (3/10/2018)</a></li> 
-            <li><a href="assets/problemc.pdf" target="_blank">10 Basic Problems(4/10/2018)</a></li> 
+            <li><a href="assets/tcs.pdf" target="_blank">TCS problem (kth Largest Factor of N)  <kbd>(3/10/2018)</kbd></a></li> 
+            <li><a href="assets/problemc.pdf" target="_blank">10 Basic Problems  <kbd>(4/10/2018)</kbd></a></li> 
         </ul>
     </main>
 </body>
