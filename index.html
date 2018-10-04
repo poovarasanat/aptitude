@@ -74,12 +74,11 @@
         .home {
             background: #fff;
             padding: 20px;
+            border-radius: 10px;
         }
 
         body {
-            background-image: url(https: //images.unsplash.com/photo-1516865622081-e98d705bb920?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8e453c06501d9fb07a1d9e4d598410be&auto=format&fit=crop&w=1350&q=80);
-                background-repeat: no-repeat;
-            background-size: cover;
+            background: url(http: //wallpaperswide.com/download/material_design-wallpaper-1920x1080.jpg) no-repeat center center fixed;
         }
 
         kbd {
@@ -93,6 +92,40 @@
             border: 2px solid black;
         }
 
+        @media only screen and (max-width: 770px) {
+            * {
+                font-size: 12px;
+                line-height: 10px;
+            }
+
+            .home {
+                width: 90%;
+            }
+
+            kbd {
+                font-size: 12px;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            * {
+                font-size: 12px;
+            }
+
+            kbd {
+                font-size: 12px;
+            }
+        }
+
+        @media only screen and (max-width: 435px) {
+            * {
+                font-size: 10px;
+            }
+
+            kbd {
+                font-size: 12px;
+            }
+        }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
@@ -122,7 +155,6 @@
             </form>
         </div>
     </nav>
-
     <main role="main" class="container home">
         <ul id="myList">
             <u>
